@@ -15,7 +15,7 @@ const Navbar = () => {
             className="logo"
             style={{ display: 'flex', alignItems: 'center', gap: '12px' }}
           >
-            <img src="/logo.jpg" alt="Digital Joy Logo" style={{ height: '45px', borderRadius: '8px', border: '1px solid rgba(0,0,0,0.05)' }} />
+            <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Digital Joy Logo" style={{ height: '45px', borderRadius: '8px', border: '1px solid rgba(0,0,0,0.05)' }} />
             <span style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--primary)', fontFamily: 'Outfit' }}>
               (주)디지털조이
             </span>

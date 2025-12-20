@@ -72,7 +72,7 @@ const Hero = () => {
             padding: 'var(--header-height) 0 100px',
             position: 'relative',
             overflow: 'hidden',
-            background: 'linear-gradient(rgba(10, 25, 47, 0.5), rgba(10, 25, 47, 0.7)), url("/ai_future_hero.png")',
+            background: `linear-gradient(rgba(10, 25, 47, 0.5), rgba(10, 25, 47, 0.7)), url("${import.meta.env.BASE_URL}ai_future_hero.png")`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             color: 'white'
@@ -86,7 +86,7 @@ const Hero = () => {
                         transition={{ delay: 0.1 }}
                         style={{ marginBottom: '2.5rem' }}
                     >
-                        <img src="/logo.jpg" alt="Digital Joy Logo" style={{ width: '110px', height: '110px', borderRadius: '28px', boxShadow: '0 20px 50px rgba(0,0,0,0.3)', border: '4px solid rgba(255,255,255,0.2)' }} />
+                        <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="Digital Joy Logo" style={{ width: '110px', height: '110px', borderRadius: '28px', boxShadow: '0 20px 50px rgba(0,0,0,0.3)', border: '4px solid rgba(255,255,255,0.2)' }} />
                     </motion.div>
 
                     <motion.p

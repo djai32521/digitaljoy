@@ -69,7 +69,7 @@ const DmmsSection = () => {
                             }}
                         >
                             <img
-                                src="/dmms_doc.png"
+                                src={`${import.meta.env.BASE_URL}dmms_doc.png`}
                                 alt="DMMS Scanning Process"
                                 style={{ width: '100%', height: 'auto', display: 'block' }}
                             />
