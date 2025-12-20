@@ -31,7 +31,8 @@ const Navbar = () => {
         <div className={`desktop-menu ${isOpen ? 'active' : ''}`} style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <a href="#about" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>회사소개</a>
           <a href="#services" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>사업분야</a>
-          <a href="#products" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>SI개발</a>
+          <a href="#products" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>제품소개</a>
+          <a href="#si-dev" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>SI개발/서비스</a>
           <a href="#saas" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>SaaS 솔루션</a>
           <a href="#contact" onClick={() => setIsOpen(false)} className="btn-primary">문의하기</a>
         </div>

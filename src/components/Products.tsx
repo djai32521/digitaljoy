@@ -53,10 +53,10 @@ const Products = () => {
     ];
 
     return (
-        <section id="products" style={{ backgroundColor: '#fdfdfd', padding: '100px 0' }}>
+        <section id="si-dev" style={{ backgroundColor: '#fdfdfd', padding: '100px 0' }}>
             <div className="container">
                 <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1.2rem', fontWeight: 800 }}>SI 개발</h2>
+                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1.2rem', fontWeight: 800 }}>SI개발/서비스</h2>
                     <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>디지털조이의 숙련된 기술력으로 완성된 주요 개발 및 서비스 포트폴리오입니다.</p>
                 </div>
 
