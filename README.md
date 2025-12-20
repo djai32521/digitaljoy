@@ -1,73 +1,51 @@
-# React + TypeScript + Vite
+# (주)디지털조이 - 공식 홈페이지 (Digital Joy)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+혁신적인 AI 기술과 모바일 솔루션을 기반으로 새로운 비즈니스 가치를 창출하는 **(주)디지털조이**의 공식 홈페이지 프로젝트입니다.
 
-Currently, two official plugins are available:
+## 🚀 주요 업데이트 및 개편 사항 (2025.12)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+홈페이지의 브랜드 가치를 높이고 사용자 경험(UX)을 극대화하기 위해 다음과 같은 대규모 시각적/구조적 개선 작업을 수행했습니다.
 
-## React Compiler
+### 1. 메인 히어로 섹션 (Hero Section) 강화
+*   **미래지향적 비주얼**: 건물 사진 대신 AI와 모바일의 결합을 상징하는 고품질 아트워크(`ai_future_hero.png`)를 적용했습니다.
+*   **AI 신경망 애니메이션**: `framer-motion`과 SVG를 활용한 실시간 신경망(Neural Network) 배경 애니메이션을 추가하여 기술적 전문성을 시각화했습니다.
+*   **고대비 다크 모드**: 딥 블루 톤의 그라데이션 오버레이와 강력한 텍스트 그림자를 적용하여 텍스트 가시성과 고급스러운 분위기를 확보했습니다.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. DMMS 솔루션 섹션 구축
+*   **공정 시스템 시각화**: 모바일 전자문서 공정(DMMS)의 6단계 프로세스(분류, 스캔, 검증, 인식, 유통, 보관)를 아이콘과 파이프라인 형태로 상세 구현했습니다.
+*   **인터랙티브 모바일 목업**: 실제 문서가 스캔되는 듯한 애니메이션이 포함된 모바일 앱 목업을 추가하여 솔루션의 실용성을 강조했습니다.
+*   **법적 준거성 강조**: KISA 지침 준수 및 법적 효력을 나타내는 요약 카드를 배치했습니다.
 
-## Expanding the ESLint configuration
+### 3. SI 개발 및 서비스 포트폴리오 통합
+*   **통합 그리드 레이아웃**: 기존의 복잡한 탭 시스템을 하나로 합쳐 **"SI 개발"** 섹션으로 개편했습니다.
+*   **핵심 제품군 나열**: BookGPT, SSPORTS, AI Auction, OCR 마스킹 대행 등 디지털조이의 주요 실적을 한눈에 볼 수 있도록 재구성했습니다.
+*   **태그 시스템**: 각 포트폴리오 카드에 `Development` 및 `Service` 태그를 부착하여 비즈니스 성격을 명확히 구분했습니다.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 4. 내비게이션 및 정보 업데이트
+*   **글로벌 내비게이션(GNB)**: 사용자 동선을 고려하여 [회사소개 - 사업분야 - SI개발 - SaaS 솔루션 - 문의하기]로 메뉴 구조를 최적화했습니다.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 5. 인프라 및 Git 관리
+*   **Git 초기화**: 프로젝트의 버전 관리를 위해 Git 저장소를 초기화하고 모든 자산을 포함한 초기 커밋을 완료했습니다.
+*   **이미지 자산 최적화**: AI로 생성된 고해상도 로고 및 배경 이미지를 `public` 자산으로 통합 관리합니다.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠 Tech Stack
+*   **Frontend**: React (Vite), TypeScript
+*   **Animation**: Framer Motion
+*   **Styling**: Vanilla CSS (Global Design System)
+*   **Icons**: Lucide React
+*   **Deployment**: (Pending/In Progress)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📂 Project Structure
+```text
+src/
+├── components/          # 공통 및 섹션별 컴포넌트
+│   ├── Hero.tsx         # 신경망 애니메이션 포함 히어로 섹션
+│   ├── DmmsSection.tsx  # 전자문서 공정 시각화 섹션
+│   ├── Products.tsx     # SI 개발 포트폴리오 그리드
+│   └── ...
+├── assets/              # 로컬 정적 자산
+└── index.css            # 글로벌 디자인 시스템 및 글래스모피즘 스타일
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+© 2025 (주)디지털조이. All rights reserved.
