@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="glass" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 1000, height: 'var(--header-height)', display: 'flex', alignItems: 'center' }}>
+    <nav className="glass" style={{ position: 'fixed', top: '40px', width: '100%', zIndex: 1000, height: 'var(--header-height)', display: 'flex', alignItems: 'center' }}>
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
         <a href="#" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }} onClick={() => setIsOpen(false)}>
           <motion.div
@@ -30,6 +30,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className={`desktop-menu ${isOpen ? 'active' : ''}`} style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
           <a href="#about" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>회사소개</a>
+          <a href="#showcase" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>Showcase</a>
           <a href="#services" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>사업분야</a>
           <a href="#products" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>제품소개</a>
           <a href="#si-dev" onClick={() => setIsOpen(false)} style={{ fontWeight: 500 }}>SI개발/서비스</a>

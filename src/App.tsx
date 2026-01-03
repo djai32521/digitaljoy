@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Showcase from './components/Showcase'
 import SectionTitle from './components/SectionTitle'
 import Services from './components/Services'
 import SaasSection from './components/SaasSection'
@@ -10,13 +11,16 @@ import DmmsSection from './components/DmmsSection'
 import AiAuctionSection from './components/AiAuctionSection'
 import Products from './components/Products'
 import Contact from './components/Contact'
+import TopBar from './components/TopBar'
 
 function App() {
   return (
-    <main>
+    <main style={{ paddingTop: '40px' }}>
+      <TopBar />
       <Navbar />
       <Hero />
       <About />
+      <Showcase />
       <SectionTitle
         id="services"
         title="주요 사업 분야"

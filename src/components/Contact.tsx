@@ -1,5 +1,4 @@
 import { Phone, Printer, MapPin } from 'lucide-react';
-
 const Contact = () => {
     return (
         <section id="contact" style={{ backgroundColor: '#0A192F', color: 'white' }}>
@@ -64,7 +63,7 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <div style={{ marginTop: '8rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', color: '#8892B0', fontSize: '0.9rem' }}>
+                <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', color: '#8892B0', fontSize: '0.9rem' }}>
                     <p>© 2025 (주)디지털조이. All rights reserved.</p>
                 </div>
             </div>
