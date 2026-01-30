@@ -30,7 +30,7 @@ const About = () => {
                         <h3 style={{ marginBottom: '1rem' }}>기업 개요</h3>
                         <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
                             <li style={{ display: 'flex', gap: '10px' }}><MapPin size={18} color="var(--primary)" /> 서울특별시 성동구 성수이로 118</li>
-                            <li style={{ display: 'flex', gap: '10px' }}><User size={18} color="var(--primary)" /> 대표자: 성대준</li>
+                            <li style={{ display: 'flex', gap: '10px' }}><User size={18} color="var(--primary)" /> 대표자: 성**</li>
                             <li style={{ display: 'flex', gap: '10px' }}><Calendar size={18} color="var(--primary)" /> 설립일: 2022년 8월 1일</li>
                         </ul>
                     </motion.div>
